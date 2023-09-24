@@ -10,6 +10,8 @@ use App\Http\Livewire\Auth\Register;
 use App\Http\Livewire\Auth\Verify;
 use App\Http\Livewire\Counter;
 use App\Http\Livewire\Customer;
+use App\Http\Livewire\Pricing;
+use App\Http\Livewire\Boxes;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -48,7 +50,19 @@ Route::get('customer', Customer::class)
 Route::get('myfirstpage', null)
     ->name('myfirstpage');
 
-    Route::middleware('auth')->group(function () {
+
+///////
+
+Route::get('pricing', Pricing::class)
+    ->name('pricing');
+
+Route::get('boxes', Boxes::class)
+    ->name('boxes');
+
+
+////
+
+Route::middleware('auth')->group(function () {
     Route::get('email/verify', Verify::class)
         ->middleware('throttle:6,1')
         ->name('verification.notice');
