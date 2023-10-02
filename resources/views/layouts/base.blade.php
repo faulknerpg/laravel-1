@@ -29,7 +29,9 @@
     <body>
         <main>
             @include('layouts.header')
+            @include('layouts.cta-signup')
             @yield('body')
+            @include('layouts.cta-learnmore')
             @include('layouts.footer')
         </main>
     </body>
