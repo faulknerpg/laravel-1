@@ -2,9 +2,9 @@
 
 namespace App\Http\Livewire;
 
-use Livewire\Component;
+use App\Http\Livewire\BaseComponent;
 
-class Customer extends Component
+class Customer extends BaseComponent
 {
     public function render()
     {
