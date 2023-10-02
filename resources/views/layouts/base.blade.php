@@ -27,6 +27,10 @@
     </head>
 
     <body>
-        @yield('body')
+        <main>
+            @include('layouts.header')
+            @yield('body')
+            @include('layouts.footer')
+        </main>
     </body>
 </html>
