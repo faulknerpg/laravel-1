@@ -12,6 +12,7 @@ use App\Http\Livewire\Counter;
 use App\Http\Livewire\Customer;
 use App\Http\Livewire\Pricing;
 use App\Http\Livewire\Boxes;
+use App\Http\Livewire\Blog;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,14 +27,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/', 'welcome')->name('home');
-
+/*
 Route::middleware('guest')->group(function () {
     Route::get('login', Login::class)
         ->name('login');
 
     Route::get('register', Register::class)
         ->name('register');
-});
+});*/
 
 Route::get('password/reset', Email::class)
     ->name('password.request');
@@ -59,9 +60,12 @@ Route::get('pricing', Pricing::class)
 Route::get('boxes', Boxes::class)
     ->name('boxes');
 
+Route::get('blog', Blog::class)
+    ->name('blog');
+
 
 ////
-
+/*
 Route::middleware('auth')->group(function () {
     Route::get('email/verify', Verify::class)
         ->middleware('throttle:6,1')
@@ -79,3 +83,4 @@ Route::middleware('auth')->group(function () {
     Route::post('logout', LogoutController::class)
         ->name('logout');
 });
+*/

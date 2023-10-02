@@ -4,7 +4,6 @@
 @section('content')
 
 
-
 <div class="flex flex-col gap-10 p-10 from-red-100 via-red-300 to-blue-500 bg-gradient-to-br min-h-screen  ">
 
     <p>box 1</p>
