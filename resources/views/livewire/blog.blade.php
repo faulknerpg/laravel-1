@@ -2,8 +2,15 @@
 
 @section('content')
 
-<div class="flex p-10 justify-between px-4 mx-auto max-w-screen-xl ">
+<div class="flex justify-between px-4 mx-auto max-w-screen-xl ">
     <article class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
+        <header class="mb-15">
+            <h1 class="text-2xl font-bold mb-5">Some blog article</h1>
+            <div class="flex gap-3 space-y-1 mb-10">
+                <img  src="https://flowbite.com/docs/images/people/profile-picture-1.jpg"  class="rounded-full h-8 w-8" />
+                <span class="text-sm">some author</span>
+            </div>
+        </header>
         <p class="mb-5"><i>Nisi qui voluptate drumstick short ribs andouille shoulder magna non nostrud. Duis do swine rump leberkas corned beef. Enim deserunt corned beef adipisicing, biltong capicola chicken ground round cupidatat. Sed shoulder minim drumstick, deserunt sunt eiusmod boudin pork mollit tenderloin.</i></p>
 
         <p class="mb-5">Bacon ipsum dolor amet capicola meatloaf ground round buffalo pig. Spare ribs capicola meatball chislic chuck. Doner andouille shoulder bacon prosciutto flank drumstick, jowl rump tri-tip chislic short loin bresaola. Bacon ground round rump bresaola meatball chuck t-bone turkey turducken doner sausage shankle sirloin corned beef. Bacon brisket sirloin shank short ribs, ham drumstick capicola kielbasa tenderloin venison kevin. Meatball sirloin shoulder, shankle turducken short ribs bresaola pork chicken chislic doner frankfurter jowl filet mignon.</p>
