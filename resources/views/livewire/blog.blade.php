@@ -5,7 +5,7 @@
 <div class="flex justify-between px-4 mx-auto max-w-screen-xl ">
     <article class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
         <header class="mb-15">
-            <h1 class="text-3xl font-bold mb-5">{{$blog_title}}</h1>
+            <h1 class="text-4xl font-bold mb-5 mt-20">{{$blog_title}}</h1>
             <div class="flex gap-3 space-y-1 mb-10">
                 <img  src="https://flowbite.com/docs/images/people/profile-picture-1.jpg"  class="rounded-full h-8 w-8" />
                 <span class="text-sm">some author</span>
