@@ -6,6 +6,18 @@ use App\Http\Livewire\BaseComponent;
 
 class Customer extends BaseComponent
 {
+    public $count = 1;
+
+    public function increment()
+    {
+        $this->count++;
+    }
+
+    public function decrement()
+    {
+        $this->count--;
+    }
+
     public function render()
     {
         return view('livewire.customer');

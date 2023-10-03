@@ -5,5 +5,10 @@
     <div class="bg-blue-500 h-24 w-24 rounded-tr-3xl rounded-br-lg">
         The whole world belongs to you.
         {{-- The whole world belongs to you. --}}
+
+        <div>
+            @include('livewire.counter',['count',$count])
+        </div>
+
     </div>
 @endsection
