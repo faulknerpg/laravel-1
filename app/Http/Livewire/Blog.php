@@ -6,7 +6,7 @@ use App\Http\Livewire\BaseComponent;
 
 class Blog extends BaseComponent
 {
-    public $blog_title = 'Some article about bacon';
+    public $blog_title = 'Which CRM do I choose, and why?';
 
     public function mount(){
         $this->cta_title = 'Discover more';
