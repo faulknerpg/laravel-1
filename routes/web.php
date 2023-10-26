@@ -13,6 +13,7 @@ use App\Http\Livewire\Customer;
 use App\Http\Livewire\Pricing;
 use App\Http\Livewire\Boxes;
 use App\Http\Livewire\Blog;
+use App\Http\Livewire\Products;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -64,6 +65,9 @@ Route::get('boxes', Boxes::class)
 
 Route::get('blog', Blog::class)
     ->name('blog');
+
+Route::get('products', Products::class)
+    ->name('products');
 
 
 ////
