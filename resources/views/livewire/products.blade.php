@@ -19,32 +19,27 @@
         x-data="theApp()" x-init="fetchStuff()">
 
         <template x-for="product in theData.data" :key="product.id">
-            <span x-text="product.brand"></span>
+            <div
+                class="relative
+                    flex
+                    h-[220px]
+                    max-w-4xl
+                    items-start
+                    gap-2
+                    overflow-hidden
+                    rounded-lg
+                    shadow-lg">
+                <img :src="product.image_url"
+                    class="h-full w-[300px] object-cover transition-all duration-300 group-hover:opacity-90">
+                <div class="flex flex-col items-start justify-center gap-4 p-4">
+                    <h2 x-text="product.brand" class="text-2xl font-semibold"></h2>
+                    <p x-text="product.description" class="text-base"></p>
+                </div>
+                <div class="flex flex-col items-start justify-center gap-4 p-4">
+                    <button
+                        class="px-5 py-2 text-white transition-all duration-300 bg-blue-600 rounded-md shadow-xl hover:bg-blue-700">Button</button>
+                </div>
+            </div>
         </template>
-
-        <p>Product 1</p>
-        <div
-            class="relative
-                flex
-                h-[220px]
-                max-w-3xl
-                items-start
-                gap-2
-                overflow-hidden
-                rounded-lg
-                shadow-lg">
-            <img src="https://p1.pxfuel.com/preview/778/373/101/nature-landscape-rocks-formation-cave-beauty.jpg"
-                class="h-full w-[300px] object-cover transition-all duration-300 group-hover:opacity-90">
-            <div class="flex flex-col items-start justify-center gap-4 p-4">
-                <h2 class="text-2xl font-semibold">Card Title</h2>
-                <p class="text-base">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                    has been the industry's standard dummy text ever since the 1500s</p>
-            </div>
-            <div class="flex flex-col items-start justify-center gap-4 p-4">
-                <button
-                    class="px-5 py-2 text-white transition-all duration-300 bg-blue-600 rounded-md shadow-xl hover:bg-blue-700">Button</button>
-            </div>
-        </div>
-
     </div>
 @endsection
